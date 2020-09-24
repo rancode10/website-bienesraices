@@ -1,0 +1,38 @@
+/** GLOBALES **/
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.site-header.inicio {
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 600px;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;  
+    align-items: center;  
+}
+
+/* NAVEGACION */
+.navegacion a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.navegacion a:hover {
+    color: #71B100;
+}
+
+.navegacion a:last-of-type {
+    margin-right: 0;
+}
+
