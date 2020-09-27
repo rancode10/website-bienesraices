@@ -57,6 +57,10 @@ h4 {
     display: block!important;
 }
 
+.contenido-centrado {
+    max-width: 80rem;
+}
+
 /** BOTONES **/
 .boton {
     color: #ffffff;
@@ -149,12 +153,17 @@ h4 {
 .contenedor-anuncios {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* mantiene las 3 columnas por fila */
 }
 
 .anuncio {
-    flex-basis: calc(33.3% - 1rem);
+    flex: 0 0 calc(33.3% - 1rem); /* shorthand flex, para grow - shrink - basis */
+    /* flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(33.3% - 1rem); */
     border: 1px solid #B5B5B5;
-    background-color: #F5F5F5;    
+    background-color: #F5F5F5;  
+    margin-bottom: 2rem;  
 }
 
 .contenido-anuncio {
@@ -176,6 +185,8 @@ h4 {
     padding: 0;
     display: flex;    
     justify-content: space-evenly;
+    max-width: 500px; /* para anuncio.html*/
+    flex: 1; /* para anuncio.html*/
 }
 
 .iconos-caracteristicas li {
@@ -315,6 +326,7 @@ h4 {
 }
 
 /** PAGINAS INTERNAS **/
+/* nosotros */
 .contenido-nosotros {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -326,4 +338,11 @@ h4 {
     font-size: 2rem;
     margin: 0;
     padding: 1rem 0 3rem 0;
+}
+
+/* anuncio */
+.resumen-propiedad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
